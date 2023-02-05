@@ -1,6 +1,5 @@
 // Given an array, find the average of all contiguous subarrays of size ‘K’ in it.
 
-
 const arr = [1, 3, 2, 6, -1, 4, 1, 8, 2]
 let K = 5
 
@@ -35,7 +34,7 @@ let K = 5
 
 const averageSubarrayOfSizeK = (arr, K) => {
     let average = []
-    
+
     let start = 0, sum = 0
     for (let i = 0; i < arr.length; i++) {
         sum += arr[i]
@@ -44,7 +43,6 @@ const averageSubarrayOfSizeK = (arr, K) => {
             sum -= arr[start]
             start++
         }
-
     }
     return average
 }
